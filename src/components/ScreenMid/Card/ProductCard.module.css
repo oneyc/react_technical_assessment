@@ -4,8 +4,26 @@
     background-color: rgb(230, 230, 230);
     width: 200px;
     padding: 10px 30px 10px 30px;
+    margin-right: 10px;
     align-items: center;
     justify-content: center;
     text-align: center;
     cursor: pointer;
+}
+
+.container h4{
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.container h5{
+    font-weight: 500;
+    font-size: 0.6rem;
+}
+
+.container p{
+    padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+    border: 1px solid red;
+    border-radius: 1rem;
+    font-size: 0.7rem;
 }

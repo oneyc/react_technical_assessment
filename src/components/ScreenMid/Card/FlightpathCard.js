@@ -5,7 +5,8 @@ const FlightpathCard = () => {
     return (
         <div className={classes.card}>
             <div className={classes.main}>
-                <div>
+                <i class="far fa-image fa-2x"></i>
+                <div className={classes.mainTitle}>
                     <h4>FP A</h4>
                     <h3>Access Volcanic</h3>
                 </div>
