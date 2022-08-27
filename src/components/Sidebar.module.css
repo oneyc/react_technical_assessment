@@ -1,0 +1,16 @@
+.news{
+    background-color: wheat;
+    padding: 10px;
+    margin: 10px;
+}
+
+.link_container{
+    background-color: wheat;
+    padding: 10px;
+    margin: 10px;
+}
+
+.link{
+    border: 1px solid black;
+    margin-top: 10px;
+}

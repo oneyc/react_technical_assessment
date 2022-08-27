@@ -1,0 +1,22 @@
+.main-container{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar{
+  width: 500px;
+  height: 100vh;
+  background-color: antiquewhite;
+}
+
+section{
+  width:100%;
+  background-color: aqua;
+}
+
+aside{
+  width: 500px;
+  background-color: gray;
+
+}
