@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Routes, Route, Link } from "react-router-dom";
-import ActivityCard from "../components/ScreenMid/ActivityCard";
+import MyProducts from "../components/ScreenMid/MyProducts";
 import FlightPaths from "../components/ScreenMid/FlightPaths";
 
 function ScreenB() {
@@ -10,7 +10,7 @@ function ScreenB() {
     return (
       <>
         <main>
-            <h2>My Flightpaths</h2>
+            <MyProducts/>
             <FlightPaths/>
         </main>
       </>

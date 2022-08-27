@@ -15,7 +15,6 @@
 .navigation{
     display: flex;
     flex-direction: column;
-    /* border: 1px solid red; */
     margin: 10px 30px 10px 30px;
     padding: 10px;
 }
@@ -30,6 +29,7 @@
 .link{
     margin-left: 1rem;
     text-decoration: none;
+    color: black;
     font-size: 1.25rem;
 }
 

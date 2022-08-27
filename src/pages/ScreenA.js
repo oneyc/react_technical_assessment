@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { Routes, Route, Link } from "react-router-dom";
-import ActivityCard from "../components/ScreenMid/ActivityCard";
+import ActivityCard from "../components/ScreenMid/Card/ActivityCard";
 import FlightPaths from "../components/ScreenMid/FlightPaths";
-import FlightpathCard from "../components/ScreenMid/FlightpathCard";
 import classes from "./ScreenA.module.css"
 
 function ScreenA() {
@@ -12,7 +11,6 @@ function ScreenA() {
     return (
       <>
         <div>
-            <h2>My Flight Paths</h2>
             <FlightPaths/>
         </div>
         <div className={classes.lowerHalf}>
