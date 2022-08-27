@@ -34,7 +34,7 @@ const Navbar = () => {
             <div className={classes.levelUp}>
                 <h3>Are you ready to level up?</h3>
                 <h4>Visit Access Marketplace today!</h4>
-                <button type="button" class="btn btn-secondary">Find out more</button>
+                <button type="button" class="btn btn-outline-dark">Take me there</button>
 
             </div>
         </React.Fragment>

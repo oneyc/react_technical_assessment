@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import ActivityCard from "../components/ScreenMid/Card/ActivityCard";
+import HelpCard from "../components/ScreenMid/Card/HelpCard";
 import FlightPaths from "../components/ScreenMid/FlightPaths";
 import classes from "./ScreenA.module.css"
 
@@ -22,7 +23,7 @@ function ScreenA() {
           </div>
           <div className={classes.helpContainer}>        
               <h2>Help</h2>
-              <ActivityCard/>
+              <HelpCard/>
           </div>
         </div>
       </>

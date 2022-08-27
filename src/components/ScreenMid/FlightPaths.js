@@ -1,14 +1,17 @@
 import classes from "./FlightPaths.module.css"
 import FlightpathCard from "./Card/FlightpathCard";
+import React from "react";
 const FlightPaths = () => {
 
     return (
-        <div className={classes.container}>
+        <React.Fragment>
             <h2>My Flightpaths</h2>
-            <FlightpathCard/>
-            <FlightpathCard/>
-            <FlightpathCard/>
-        </div>
+            <div className={classes.container}>
+                <FlightpathCard/>
+                <FlightpathCard/>
+                <FlightpathCard/>
+            </div>
+        </React.Fragment>
     )
 }
 

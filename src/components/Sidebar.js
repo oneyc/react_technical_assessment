@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./Sidebar.module.css"
 import Carousel from "./Carousel/Carousel";
+import HelpCard from "./ScreenMid/Card/HelpCard";
 
 // import { Nav, NavLink } from "react-router-dom";
 
@@ -25,6 +26,8 @@ const Sidebar = () => {
                     <h4>An essential guide to workspace</h4>
                 </div>
             </div>
+            <h3 className={classes.linkText}>Help</h3>
+            <HelpCard/>
         </React.Fragment>
     )
 }
