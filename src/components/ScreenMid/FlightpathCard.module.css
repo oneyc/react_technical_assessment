@@ -1,3 +1,37 @@
 .card{
-    border: 1px solid red;
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+    border: 2px solid rgb(200, 200, 200);
+    margin: 10px 0px 10px 0px;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.main .button{
+    color:black;
+    border-style: none;
+}
+
+.main h4{
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.main h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.rightSection{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }

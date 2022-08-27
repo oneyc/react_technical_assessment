@@ -1,0 +1,14 @@
+.lowerHalf{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.activityContainer{
+    margin: 10px;
+}
+
+.helpContainer{
+    margin: 10px;
+}

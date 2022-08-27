@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import ActivityCard from "../components/ScreenMid/ActivityCard";
-import FlightpathCard from "../components/ScreenMid/FlightpathCard";
+import FlightPaths from "../components/ScreenMid/FlightPaths";
 
 function ScreenB() {
 
@@ -10,18 +10,9 @@ function ScreenB() {
     return (
       <>
         <main>
-            <h2>My Flight Paths B</h2>
-            <FlightpathCard/>
+            <h2>My Flightpaths</h2>
+            <FlightPaths/>
         </main>
-        <div>        
-            <h2>Activity B</h2>
-            <ActivityCard/>
-        </div>
-        <div>
-            <h2>Help</h2>
-            <ActivityCard/>
-        </div>
-
       </>
     );
   }
