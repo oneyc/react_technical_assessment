@@ -2,8 +2,7 @@ import React from "react";
 import classes from "./Sidebar.module.css"
 import Carousel from "./Carousel/Carousel";
 import HelpCard from "./ScreenMid/Card/HelpCard";
-
-// import { Nav, NavLink } from "react-router-dom";
+import QuickLinks from "./QuickLinks";
 
 const Sidebar = () => {
     return(
@@ -16,16 +15,7 @@ const Sidebar = () => {
                 <Carousel/>
             </div>
             <h3 className={classes.linkText}>Quick Links</h3>
-            <div className={classes.link_container}>
-                <div className={classes.link}>
-                    <h6>Learning</h6>
-                    <h4>An essential guide to workspace</h4>
-                </div>
-                <div className={classes.link}>
-                    <h6>Learning</h6>
-                    <h4>An essential guide to workspace</h4>
-                </div>
-            </div>
+                <QuickLinks/>
             <h3 className={classes.linkText}>Help</h3>
             <HelpCard/>
         </React.Fragment>

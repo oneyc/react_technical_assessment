@@ -3,10 +3,11 @@
     flex-direction: column;
     background-color: rgb(230, 230, 230);
     width: 200px;
+    height: 250px;
     padding: 10px 30px 10px 30px;
     margin-right: 10px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
     cursor: pointer;
 }

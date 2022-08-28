@@ -1,8 +1,25 @@
 import React from "react";
 import classes from "./Navbar.module.css"
 import { Link, Nav, NavLink } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import {login, logout} from "../redux/userSlice"
+import { useSelector } from 'react-redux';
 
 const Navbar = () => {
+    
+    const dispatch = useDispatch();
+    const loginStatus = useSelector((state) => {
+        return state.userAction.isLoggedIn
+    })
+    const loginHandler = () => {
+        dispatch(login())
+        console.log("loginStatus", loginStatus)
+    }
+    const logoutHandler = () => {
+        dispatch(logout())
+        console.log("logoutHandler", loginStatus)
+    }
+
     return(
         <React.Fragment>
             <div className={classes.greeting}>
@@ -26,16 +43,16 @@ const Navbar = () => {
                     <i class="fas fa-shopping-cart fa-2x"></i>
                     <Link to="/screenB" className={classes.link}>SOW/Service Requests</Link>
                 </div>
-                <div className={classes.linkList}>
+                {loginStatus ? <div className={classes.linkList}>
                     <i class="fas fa-cog fa-2x"></i>
-                    <Link to="/screenB" className={classes.link}>Settings</Link>
-                </div>
+                    <Link to="/settings" className={classes.link}>Settings</Link>
+                </div> : null}
             </nav>
             <div className={classes.levelUp}>
                 <h3>Are you ready to level up?</h3>
                 <h4>Visit Access Marketplace today!</h4>
-                <button type="button" class="btn btn-outline-dark">Take me there</button>
-
+                {!loginStatus ? <button type="button" class="btn btn-outline-dark" onClick={loginHandler}>Take me there</button>
+                :<button type="button" class="btn btn-outline-dark" onClick={logoutHandler}>Take me out</button>}
             </div>
         </React.Fragment>
 

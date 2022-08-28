@@ -1,0 +1,27 @@
+.linkText{
+    font-size: 1.2rem;
+    margin: 50px 0px 10px 30px;
+}
+
+.link_container{
+    background-color: rgb(230, 230, 230);
+    margin: 10px 30px 10px 30px;
+    padding: 10px 20px 10px 20px;
+    border: 4px solid rgb(200, 200, 200);
+}
+
+.link{
+    border: 2px solid rgb(200, 200, 200);
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.link h6{
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+.link h4{
+    font-weight: 500;
+    font-size: 1rem;
+}

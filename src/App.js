@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import ScreenA from "./pages/ScreenA";
 import ScreenB from "./pages/ScreenB";
+import Settings from "./pages/Settings";
+import NewQuickLink from "./pages/NewQuickLink";
 
 function App() {
   return (
@@ -15,6 +17,9 @@ function App() {
         <Routes>
           <Route path="/" element={<ScreenA/>}/>
           <Route path="/screenB" element={<ScreenB/>}/>
+          <Route path="/settings" element={<Settings/>}/>
+          <Route path="/newQuickLink" element={<NewQuickLink/>}/>
+
         </Routes>
       </section>
       <aside>
