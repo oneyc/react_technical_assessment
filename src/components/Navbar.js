@@ -1,9 +1,13 @@
 import React from "react";
 import classes from "./Navbar.module.css"
-import { Link, Nav, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import {login, logout} from "../redux/userSlice"
 import { useSelector } from 'react-redux';
+import {
+    auth,
+    signOut,
+  } from '../firebase/init-firebase';
 
 const Navbar = () => {
     
@@ -12,11 +16,16 @@ const Navbar = () => {
         return state.userAction.isLoggedIn
     })
     const loginHandler = () => {
-        dispatch(login())
-        console.log("loginStatus", loginStatus)
+        // dispatch(login())
     }
     const logoutHandler = () => {
-        dispatch(logout())
+        signOut(auth)
+        .then(()=> {
+            dispatch(logout())
+        })
+        .catch((error) => {
+            alert(error)
+        })
         console.log("logoutHandler", loginStatus)
     }
 

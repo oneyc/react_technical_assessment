@@ -27,9 +27,14 @@ const QuickLinks = () => {
         getData();
     }, [])
 
+    const linkClickedHandler = (url) => {
+        window.open(url, '_blank').focus();
+        // console.log(url)
+    }
+
     const mapQuickLinks = quickLinks.map((link) => {
         return (
-                <div className={classes.link}>
+                <div className={classes.link} onClick={() => linkClickedHandler(link.url)}>
                     <h6>{link.type}</h6>
                     <h4>{link.title}</h4>
                 </div>
